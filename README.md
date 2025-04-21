@@ -42,11 +42,13 @@ An intelligent chatbot application where users can ask questions and engage in m
 
 2. Generate an API key for Gemini:
 
+
   Visit Google AI Studio to generate your API key.
   Copy the generated API key.
 
 
 3. Configure your application.properties file:
+
    
   spring.application.name=gemini  
   gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
@@ -54,10 +56,10 @@ An intelligent chatbot application where users can ask questions and engage in m
 
 
 4. Build and run the Spring Boot application:
+   
 
-
-mvn clean install  
-mvn spring-boot:run  
+   mvn clean install  
+   mvn spring-boot:run  
 
 
 
@@ -77,9 +79,13 @@ mvn spring-boot:run
 
 
 ## Insights & Lessons Learned
+
+
 ### Integration Challenges
 
 Integrating the AI backend with Google's Gemini API posed significant challenges, particularly in constructing API requests using Spring Boot's webClient.post(). The process required careful attention to syntactical details, and debugging was a key part of resolving errors.
+
+
 
 ### Key Takeaways
 The Gemini model provides highly accurate and relevant responses but demands precise API configuration.
@@ -87,6 +93,8 @@ The Gemini model provides highly accurate and relevant responses but demands pre
 Visiting Google AI Studio to generate and manage the API key is essential for successful integration.
 
 Patience and iterative testing were crucial in overcoming integration hurdles.
+
+
 
 ### Future Enhancements
 

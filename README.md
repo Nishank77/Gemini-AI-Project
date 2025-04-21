@@ -49,7 +49,7 @@ An intelligent chatbot application where users can ask questions and engage in m
 3. Configure your application.properties file:
    
   spring.application.name=gemini  
-  gemini.api.url=https://generativelanguage.googleapis.com/v1beta  
+  gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
   gemini.api.key=<YOUR_API_KEY>  
 
 
